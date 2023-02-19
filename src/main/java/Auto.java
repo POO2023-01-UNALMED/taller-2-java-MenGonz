@@ -20,20 +20,21 @@ public class Auto {
     public Integer registro;
     public static Integer cantidadCreados;
     
-    public Auto(String marca, String modelo, Motor motor, Asiento[] asientos) {
+    public Auto(String marca, String modelo, Motor motor, Asiento[] asientos, Integer registro, String cantidadCreados) {
         this.marca = marca;
         this.modelo = modelo;
         this.motor = motor;
         this.asientos = asientos;
+        this.registro = registro;
     }
     
     public Integer cantidadAsientos(){
-        return self.asientos.length;
+        return this.asientos.length;
     }
 
     public String verificarIntegridad(){
         Boolean x = true;
-        String reg = motor.registro;
+        Integer reg = motor.registro;
         for(int i = 0; i < asientos.lenght; ++i){
             if(!(reg == asientos[i].registro)){ x = false; break;}
         }
