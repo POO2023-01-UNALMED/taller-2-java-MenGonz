@@ -5,7 +5,6 @@ public class Motor {
     
     public Motor(int numeroCilindros) {
         this.numeroCilindros = numeroCilindros;
-        this.encendido = false;
     }
     
     public void cambiarRegistro(Integer registro){
