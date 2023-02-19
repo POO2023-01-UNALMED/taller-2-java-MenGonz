@@ -35,7 +35,7 @@ public class Auto {
         Boolean x = true;
         String reg = motor.registro;
         for(int i = 0; i < asientos.lenght; ++i){
-            if(reg != asientos[i].registro){ x = false; break;}
+            if(!(reg == asientos[i].registro)){ x = false; break;}
         }
         if(x){ System.out.println("Auto original"); }
         else{System.out.println("Las piezas no son originales");}
