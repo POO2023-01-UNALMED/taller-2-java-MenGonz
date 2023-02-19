@@ -35,10 +35,10 @@ public class Auto {
     public String verificarIntegridad(){
         Boolean x = true;
         Integer reg = motor.registro;
-        for(int i = 0; i < asientos.lenght; ++i){
+        for(int i = 0; i < asientos.length; ++i){
             if(!(reg == asientos[i].registro)){ x = false; break;}
         }
-        if(x){ System.out.println("Auto original"); }
-        else{System.out.println("Las piezas no son originales");}
+        if(x){ return("Auto original"); }
+        else{ return("Las piezas no son originales");}
     }
 }
