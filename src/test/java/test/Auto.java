@@ -1,16 +1,4 @@
-// Auto.java
-//
-// modelo string 
-// precio int
-// asientos array[asiento]
-// marca string
-// motor Motor
-// registro Int 
-// cantidadCreados Int
-// ----------------------------------------------------------------
-// cantidadAsientos(); int
-// verificarIntegridad(); String
-// 
+package test;
 public class Auto {
     public String modelo;
     public Integer precio;

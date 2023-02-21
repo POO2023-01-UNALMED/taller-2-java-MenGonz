@@ -1,3 +1,4 @@
+package test;
 public class Asiento {
     public String color;
     public Integer precio;
