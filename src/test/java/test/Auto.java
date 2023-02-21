@@ -8,13 +8,6 @@ public class Auto {
     public Integer registro;
     public static Integer cantidadCreados;
     
-    public Auto(String marca, String modelo, Motor motor, Asiento[] asientos, Integer registro, String cantidadCreados) {
-        this.marca = marca;
-        this.modelo = modelo;
-        this.motor = motor;
-        this.asientos = asientos;
-        this.registro = registro;
-    }
     
     public Integer cantidadAsientos(){
         return this.asientos.length;
