@@ -10,7 +10,14 @@ public class Auto {
     
     
     public Integer cantidadAsientos(){
-        return this.asientos.length;
+        Integer cont = 0;
+
+        for (int i = 0; i < asientos.length; i++) {
+            if(!(this.asientos[i] == null)){
+                cont += 1;
+            }
+        }
+        return cont;
     }
 
     public String verificarIntegridad(){
@@ -19,7 +26,7 @@ public class Auto {
         for(int i = 0; i < asientos.length; ++i){
             if(!(reg == asientos[i].registro)){ x = false; break;}
         }
-        if(x){ return("Auto original"); }
+        if(x && this.registro == reg){ return("Auto original"); }
         else{ return("Las piezas no son originales");}
     }
 }
